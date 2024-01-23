@@ -4,6 +4,7 @@ import SchemaDropDown from '../SchemaDropDown'
 
 const Body = ({ segmentName, setSegmentName, selectedSchema, 
 	filteredOptions, onChangeAddedSchema, newSchema, onChangeNewSchema, handleAddNewSchema }) => {
+		
 	return (
 		<Modal.Body>
 			<Form>
@@ -27,8 +28,7 @@ const Body = ({ segmentName, setSegmentName, selectedSchema,
 					)}
 				</div>}
 				<SchemaDropDown options={filteredOptions} value={newSchema} onChange={onChangeNewSchema} />
-				<Button variant='link' style={{ color: '#198754' }} className='btn-color' onClick={handleAddNewSchema}>+ Add new schema</Button>
-
+				<Button variant='link' style={{ color: 'rgb(65, 180, 148)' }} className='btn-color fs-6' onClick={handleAddNewSchema}>+ Add new schema</Button>
 			</Form>
 		</Modal.Body>
 	)

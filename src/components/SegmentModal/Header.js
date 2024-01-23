@@ -3,7 +3,7 @@ import { Modal } from 'react-bootstrap'
 
 const Header = () => {
 	return (
-		<Modal.Header closeButton>
+		<Modal.Header style={{background: 'rgb(57 174 188)', color: 'white'}} closeButton>
 			<Modal.Title>Saving Segment</Modal.Title>
 		</Modal.Header>
 	)
