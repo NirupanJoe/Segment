@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.model-right .modal-dialog {
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+	height: 100% !important;
+}
+
+.modal-content {
+	height: 100% !important;
+}
+.modal { 
+	overflow: hidden !important;
+}

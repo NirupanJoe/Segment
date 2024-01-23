@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import SegmentModal from './components/SegmentModal';
 
-function App() {
+const App = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Button variant="primary" onClick={handleShow}>
+        Save Segment
+      </Button>
+
+      <SegmentModal show={showModal} handleClose={handleClose} />
     </div>
   );
-}
+};
 
 export default App;
