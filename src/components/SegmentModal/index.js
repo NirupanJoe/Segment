@@ -22,7 +22,7 @@ const SegmentModal = ({ show, handleClose }) => {
 	const [filteredOptions, setFilterOptions] = useState(schemaOptions)
 
 	const handleAddNewSchema = () => {
-		if (newSchema.value) {
+		if (newSchema) {
 			const schemas = [...selectedSchema, newSchema]
 			setSelectedSchema(schemas);
 			setFilterOptions(filteredOptions.filter(({ value }) => newSchema.value !== value))
