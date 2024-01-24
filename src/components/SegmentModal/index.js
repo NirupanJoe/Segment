@@ -39,6 +39,7 @@ const SegmentModal = ({ show, handleClose }) => {
 
 		handleClose();
 		setSelectedSchema([])
+		setFilterOptions(schemaOptions)
 	};
 
 	const onChangeNewSchema = (value) => {
