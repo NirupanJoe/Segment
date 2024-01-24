@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const webhookURL = 'https://webhook.site/token/4411812d-6060-4c4b-baf3-48141004c34c';
+const webhookURL = 'https://webhook.site/4411812d-6060-4c4b-baf3-48141004c34c';
 
 const services = {
 	getFilterOptions: ({filteredOptions, selectedValue, preValue}) => 
